@@ -1,21 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Form</title>
-	
+	<title>Three Column Layout with Images and Content</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #f2e6ff;
+		}
+		.container {
+			width: 1000px;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.column {
+			flex: 1;
+			margin: 10px;
+			background-color: #d9b3ff;
+			padding: 20px;
+			border-radius: 10px;
+		}
+		.column img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+		}
+		h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+			color: #4d004d;
+		}
+		p {
+			font-size: 16px;
+			line-height: 1.5;
+			color: #330033;
+		}
+	</style>
 </head>
 <body>
-	<form>
-		<label for="name">Name:</label>
-		<input type="text" id="name" name="name" required>
-
-		<label for="email">Email:</label>
-		<input type="text" id="email" name="email" required>
-
-		<label for="message">Message:</label>
-		<textarea id="message" name="message" rows="5" required></textarea>
-
-		<input type="submit" value="Submit">
-	</form>
+	<div class="container">
+		<div class="column">
+			<img src="https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg" alt="Image 1">
+			<h2>GAME OF THRONES</h2>
+			<p>Nine noble families wage war against each other in order to gain control over the mythical land of Westeros. 
+				Meanwhile, a force is rising after millenniums and threatens the existence of living men.Trouble is brewing in Westeros. 
+				For the inhabitants of this world, control of the Iron Throne holds the lure of great power. But in a land where seasons can last a lifetime, winter is coming...
+				and beyond the Great Wall that protects them, a forgotten evil has returned.</p>
+		</div>
+		<div class="column">
+			<img src="https://www.hdwallpaperslife.com/wp-content/uploads/2017/04/breaking_bad_actors_face_walter_white_jesse_pinkman_2009_1920x1200-480x640.jpg" alt="Image 2">
+			<h2>BREAKING BAD</h2>
+			<p>Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the meth-making business to repay his medical debts. 
+				His priorities begin to change when he partners with Jesse.White turns to a life of crime and partners with a former student, Jesse Pinkman (Aaron Paul),
+				 to produce and distribute methamphetamine to secure his family's financial future before he dies, while navigating the dangers of the criminal underworld. 
+				 Breaking Bad premiered on AMC on January 20, 2008, and concluded on September 29, 2013.</p>
+		</div>
+		<div class="column">
+			<img src="https://flxt.tmsimg.com/assets/p10182728_b_v13_bd.jpg" alt="Image 3">
+			<h2>PEAKY BLINDERS</h2>
+			<p>Peaky Blinders is a British period crime drama television series created by Steven Knight. 
+				Set in Birmingham, it follows the exploits of the Peaky Blinders crime gang in the direct aftermath of the First World War. 
+				The fictional gang is loosely based on a real urban youth gang of the same name who were active in the city from the 1880s to the 1910s.
+				It features an ensemble cast led by Cillian Murphy, starring as Tommy Shelby, Helen McCrory as Elizabeth "Polly" Gray, Paul Anderson as Arthur Shelby</p>
+		</div>
+	</div>
 </body>
 </html>
